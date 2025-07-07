@@ -58,7 +58,7 @@
                 <!-- Este es el hueco donde meteremos el contenido 
                  desde otra vista-->
                 @yield('content')
-            <!-- Portfolio Section Heading-->
+                <!-- Portfolio Section Heading-->
 
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
                 <!-- Icon Divider-->
