@@ -9,11 +9,19 @@ use App\Http\Requests\ProyectoRequest;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 
+//Este controlara el crud
 class ProyectoController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+    //Esto es para que no te deje entrar si no estas logueado
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+
     public function index(Request $request): View
     {
         $proyectos = Proyecto::paginate();
